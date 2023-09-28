@@ -5,18 +5,20 @@ import { AppComponent } from './app.component';
 import { ModoNocturnoComponent } from './modo-nocturno/modo-nocturno.component';
 import { FooterComponent } from './footer/footer.component';
 import { ListaComponent } from './lista/lista.component';
+import { ToggleListDirective } from './directives/toggle-list.directive';
+import { RoundedBlockDirective } from './directives/rounded-block.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModoNocturnoComponent,
     FooterComponent,
-    ListaComponent
+    ListaComponent,
+    ToggleListDirective,
+    RoundedBlockDirective,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

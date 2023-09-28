@@ -7,8 +7,7 @@ import { ToggleListDirective } from '../directives/toggle-list.directive';
   styleUrls: ['./lista.component.scss'],
 })
 export class ListaComponent {
-  alumnos: any[] = [
-    // Cambio de Alumno[] a any[]
+  alumnos = [
     {
       nombre: 'Axel',
       edad: 23 + ' ' + 'años',

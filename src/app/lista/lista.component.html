@@ -1,8 +1,10 @@
-<button (click)="toggleAlumnos()"></button>
-<div [appToggleList]="mostrarAlumnos"></div> appRoundedBlockDirectiveTs>
-  <p *ngFor="let alumno of alumnos">
+<button appRoundedBlockDirectiveTs (click)="toggleAlumnos()">
+  Mostrar/Ocultar Alumnos
+</button>
+<ul appRoundedBlockDirectiveTs [appToggleList]="mostrarAlumnos">
+  <li *ngFor="let alumno of alumnos">
     {{ alumno.nombre | uppercase }} - {{ alumno.edad }} -
     {{ alumno.fechaInscripcion | date }}- {{ alumno.curso | uppercase }} -
     {{ alumno.nivel }}
-  </p>
-</div>
+  </li>
+</ul>

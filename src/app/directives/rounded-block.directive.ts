@@ -13,7 +13,7 @@ export class RoundedBlockDirective {
     this.Renderer.setStyle(
       this.ElementRef.nativeElement,
       'background-color',
-      'red'
+      'purple'
     );
   }
 

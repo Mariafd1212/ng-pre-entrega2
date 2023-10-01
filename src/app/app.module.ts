@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ListaComponent } from './lista/lista.component';
 import { ToggleListDirective } from './directives/toggle-list.directive';
 import { RoundedBlockDirective } from './directives/rounded-block.directive';
+import { CardsComponent } from './cards/cards.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,8 +18,9 @@ import { RoundedBlockDirective } from './directives/rounded-block.directive';
     ListaComponent,
     ToggleListDirective,
     RoundedBlockDirective,
+    CardsComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -18,5 +18,5 @@ export class ToggleListDirective {
     }
   }
 
-  constructor(private el: ElementRef, private renderer: Renderer2) {}
+  constructor(public el: ElementRef, public renderer: Renderer2) {}
 }
